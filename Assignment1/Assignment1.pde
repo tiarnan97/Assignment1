@@ -14,4 +14,8 @@ void draw(){
   translate(width/2,height/2); //For a centerpoint with stars
   background(0);
   
+  for(int i=0; i<stars.length; i++) {
+    stars[i].showStars();
+
+  }
 }

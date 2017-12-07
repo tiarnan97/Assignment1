@@ -7,4 +7,12 @@ class Star{
   float sx,sy;
   float px,py,pz;
     
-}
+
+
+  void showStars(){
+    noStroke();
+    fill(255);
+    
+  }
+ }
+  
