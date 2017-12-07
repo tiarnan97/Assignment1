@@ -1,7 +1,7 @@
 float speed = 0;
 int movingSpeed = 0;
 
-Star[] stars = new Star[450];
+Star[] stars = new Star[450]
 
 void setup() {
   size(1500,900);
