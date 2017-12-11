@@ -3,7 +3,7 @@ float speed = 0;
 int movingSpeed = 0;
 float kph;
 PFont font; 
-PImage image;
+PImage img;
 
 
 Star[] stars = new Star[450];
@@ -13,7 +13,7 @@ void setup() {
   for (int i=0; i<stars.length; i++){
     stars[i] = new Star();
   }
-  image = loadImage("DeLorean.jpg");
+  img = loadImage("DeLorean.jpg");
 }
 
 void draw(){
