@@ -1,5 +1,6 @@
 float speed = 0;
 int movingSpeed = 0;
+float kph;
 
 Star[] stars = new Star[450];
 
