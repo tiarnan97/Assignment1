@@ -10,6 +10,15 @@ void setup() {
   }
 }
 
+void mousePressed(){
+  if (speed ==0) {
+    speed =200;
+  }
+  else {
+    speed = 0;
+  }
+}
+
 void draw(){
   background(0);
   pushMatrix();

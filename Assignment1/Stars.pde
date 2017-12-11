@@ -12,7 +12,6 @@ class Star{
     reset();
   }
   
-  
   void reset(){
     x = (int)random(-width/2,width/2);
     y = (int)random(-height/2,height/2);
