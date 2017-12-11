@@ -26,6 +26,7 @@ void draw(){
   
   for(int i=0; i<stars.length; i++) {
     stars[i].showStars();
+    stars[i].moveStars();
   }
   popMatrix();
   fill(192,192,192);

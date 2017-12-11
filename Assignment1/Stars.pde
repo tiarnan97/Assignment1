@@ -18,6 +18,22 @@ class Star{
     pz = z;
   }
   
+  boolean Reset2(){
+    if(z < 1){
+      return true;
+    } else {
+      return false;
+    }
+  }
+  
+   void moveStars(){
+      z = z - speed;
+      if(Reset2()){
+        z = width;
+        reset();
+      }
+    }
+  
   void showStars(){
     noStroke();
     fill(255);
@@ -34,8 +50,6 @@ class Star{
      line(px,py,sx,sy); //give the illusion of travelling fast
   }
   
-    void moveStars(){
-      z = z - speed;
-    }
-}
+  }
+
    
