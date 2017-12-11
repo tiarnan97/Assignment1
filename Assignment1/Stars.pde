@@ -12,7 +12,7 @@ class Star{
     reset();
   }
   
-  void reset(){
+  void reset(){ //resets the initial position of the stars after going to warp speed
     x = (int)random(-width/2,width/2);
     y = (int)random(-height/2,height/2);
     pz = z;

@@ -28,4 +28,6 @@ void draw(){
     stars[i].showStars();
   }
   popMatrix();
-}
+  fill(192,192,192);
+  rect(0,height-height/4,width,height/4); //dashboard 
+  }
