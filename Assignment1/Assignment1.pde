@@ -20,6 +20,7 @@ void draw(){
   background(0);
   font = loadFont("Stencil-28.vlw");
   textFont(font, 20);
+  
   pushMatrix();
   translate(width/2,height/2); //For a centerpoint with stars
   
@@ -36,6 +37,8 @@ void draw(){
   text(kph,width-190,880);
   text("Press V to check system vitals",650,850);
   Speedometer();
+  image(img, 0,675,300,300);
+  tint(200,200,0);
 
 }
   
