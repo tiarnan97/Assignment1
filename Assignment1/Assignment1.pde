@@ -32,6 +32,7 @@ void draw(){
   fill(255,0,0);
   textSize(30); //speedometer
   text(kph,width-190,880);
+  text("Press V to check system vitals",650,850);
   Speedometer();
 
 }
@@ -59,6 +60,10 @@ void draw(){
          speed = 0;
         }
         Speedometer();
+    }
+    
+    if (key == 'v') //to see systems vitals
+    {
     }
   }
 
