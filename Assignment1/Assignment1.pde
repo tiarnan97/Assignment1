@@ -1,6 +1,7 @@
 float speed = 0;
 int movingSpeed = 0;
 float kph;
+PFont mono;
 
 Star[] stars = new Star[450];
 
@@ -12,8 +13,9 @@ void setup() {
 }
 
 void mousePressed(){
-  if (speed ==0) {
+  if (kph >= 88) {
     speed =200;
+    kph = 0;
   }
   else {
     speed = 0;
@@ -32,4 +34,11 @@ void draw(){
   popMatrix();
   fill(192,192,192);
   rect(0,height-height/4,width,height/4); //dashboard 
+  
+  mono = loadFont("font.ttf");
+  fill(255,255,0);
+  textSize(45); //speedometer
+  textFont(mono);
+  text(kph,width/2,800);
+  kph += 1;
   }
