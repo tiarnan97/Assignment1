@@ -18,8 +18,6 @@ class Star{
     pz = z;
   }
   
-  
-   
   void showStars(){
     noStroke();
     fill(255);
@@ -35,6 +33,9 @@ class Star{
      strokeWeight(size);
      line(px,py,sx,sy); //give the illusion of travelling fast
   }
-
+  
+    void moveStars(){
+      z = z - speed;
+    }
 }
    
