@@ -14,7 +14,7 @@ void setup() {
 }
 
 void mousePressed(){
-  if (kph >= 88) {
+  if (kph == 88) {
     speed =200;
     kph = 0;
   }
@@ -42,14 +42,15 @@ void draw(){
   textSize(45); //speedometer
   text(kph,width-190,880);
   Speedometer();
+
 }
   
    void Speedometer(){
-      while(kph > 88){
+      while(kph == 89){
        text("Click now to make the jump to hyperspeed",300,750);
        
     }
-  kph += 1;
+    kph += 1;
   }
 
   
