@@ -50,6 +50,6 @@ class Star{
      line(px,py,sx,sy); //give the illusion of travelling fast
   }
   
-  }
+}
 
    
