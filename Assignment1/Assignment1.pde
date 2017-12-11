@@ -45,7 +45,7 @@ void draw(){
 }
   
    void Speedometer(){
-      while(kph > 89){
+      while(kph > 88){
        text("Click now to make the jump to hyperspeed",300,750);
        
     }
