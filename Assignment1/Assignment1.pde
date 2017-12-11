@@ -37,17 +37,15 @@ void draw(){
 }
   
    void Speedometer(){
-      if (kph >= 88){
-       text("Press K to make the jump to hyperspeed",300,750);
+      if (kph == 88){
+       text("Press K to make the jump to hyperspeed",650,750);
+       
       }
       else if(kph < 88) {
-        text("building speed to 88kph",300,750);
+        text("building speed to 88kph",650,750);
          kph += 1;
       }
-      else {
-        text("making the jump to hyperspeed press K to cancel",300,750);
-        kph =1;
-      }
+  
   }
   
   void keyPressed() {
@@ -56,11 +54,11 @@ void draw(){
       if (kph >= 88) {
         speed =200;
         kph = 0;
-  }
+       }
        else {
          speed = 0;
-  }
-      Speedometer();
+        }
+        Speedometer();
     }
   }
 
