@@ -2,7 +2,7 @@ class Star{
   
   int x;
   int y;
-  float size = random(1,10);
+  float size = random(1,6);
   float z; 
   float sx,sy;
   float px,py,pz; //each star is like a molecule 

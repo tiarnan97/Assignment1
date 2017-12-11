@@ -1,3 +1,4 @@
+
 float speed = 0;
 int movingSpeed = 0;
 float kph;
@@ -14,7 +15,7 @@ void setup() {
 }
 
 void mousePressed(){
-  if (kph == 88) {
+  if (kph >= 88) {
     speed =200;
     kph = 0;
   }
@@ -46,12 +47,20 @@ void draw(){
 }
   
    void Speedometer(){
-      while(kph == 89){
+      if (kph >= 88){
        text("Click now to make the jump to hyperspeed",300,750);
-       
-    }
+      }
+      else if(kph <=88) {
+        text("building speed to 88kph",300,750);
+      }
+      else {
+        text("making the jump to hyperspeed",300,750);
+      }
+    
     kph += 1;
   }
+  
+  
 
   
  
