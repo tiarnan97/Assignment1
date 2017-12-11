@@ -1,7 +1,7 @@
 float speed = 0;
 int movingSpeed = 0;
 float kph;
-PFont mono;
+
 
 Star[] stars = new Star[450];
 
@@ -35,10 +35,12 @@ void draw(){
   fill(192,192,192);
   rect(0,height-height/4,width,height/4); //dashboard 
   
-  mono = loadFont("font.ttf");
   fill(255,255,0);
   textSize(45); //speedometer
-  textFont(mono);
   text(kph,width/2,800);
+  
+    if(kph >=88){
+      text("Click now to make the jump to hyperspeed",width/2,650);
+    }
   kph += 1;
   }
