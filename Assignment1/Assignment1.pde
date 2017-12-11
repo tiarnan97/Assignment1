@@ -42,15 +42,12 @@ void draw(){
   textSize(45); //speedometer
   text(kph,width-190,880);
   Speedometer();
-  Clock.time();
 }
   
    void Speedometer(){
-      if(kph >=88){
-      text("Click now to make the jump to hyperspeed",300,750);
-    }
-    else {
-      text("Gaining speeds required to make jump",300,750);
+      while(kph > 89){
+       text("Click now to make the jump to hyperspeed",300,750);
+       
     }
   kph += 1;
   }
