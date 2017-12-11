@@ -14,20 +14,10 @@ void setup() {
   }
 }
 
-void mousePressed(){
-  if (kph >= 88) {
-    speed =200;
-    kph = 0;
-  }
-  else {
-    speed = 0;
-  }
-}
-
 void draw(){
   background(0);
   font = loadFont("Stencil-28.vlw");
-  textFont(font, 28);
+  textFont(font, 20);
   pushMatrix();
   translate(width/2,height/2); //For a centerpoint with stars
   
@@ -40,7 +30,7 @@ void draw(){
   rect(0,height-height/4,width,height/4); //dashboard 
   
   fill(255,0,0);
-  textSize(45); //speedometer
+  textSize(30); //speedometer
   text(kph,width-190,880);
   Speedometer();
 
@@ -48,16 +38,30 @@ void draw(){
   
    void Speedometer(){
       if (kph >= 88){
-       text("Click now to make the jump to hyperspeed",300,750);
+       text("Press K to make the jump to hyperspeed",300,750);
       }
-      else if(kph <=88) {
+      else if(kph < 88) {
         text("building speed to 88kph",300,750);
+         kph += 1;
       }
       else {
-        text("making the jump to hyperspeed",300,750);
+        text("making the jump to hyperspeed press K to cancel",300,750);
+        kph =1;
       }
-
-    kph += 1;
+  }
+  
+  void keyPressed() {
+    if (key == 'k')
+    {
+      if (kph >= 88) {
+        speed =200;
+        kph = 0;
+  }
+       else {
+         speed = 0;
+  }
+      Speedometer();
+    }
   }
 
  
