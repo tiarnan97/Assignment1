@@ -37,8 +37,8 @@ void draw(){
   text(kph,width-190,880);
   text("Press V to check system vitals",650,850);
   Speedometer();
-  image(img, 0,675,300,300);
-  tint(200,200,0);
+  image(img, 0,670,300,300);
+  tint(50,50,50);
 
 }
   
@@ -71,11 +71,3 @@ void draw(){
     {
     }
   }
-
- 
-  
-    
-  
-
-  
- 
