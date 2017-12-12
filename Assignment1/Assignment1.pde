@@ -9,6 +9,7 @@ int i =0;
 
 
 Star[] stars = new Star[450];
+system s
 
 void setup() {
   size(1500,900);
@@ -71,6 +72,6 @@ void draw(){
     
     if (key == 'v') //to see systems vitals
     {
-      SystemInfo.Vitality();
+      SystemInfo.displayT();
     }
   }

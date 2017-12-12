@@ -3,9 +3,12 @@ String[] vitals = new String[12];
 // the values for each system entity,going to be random
 int[] values = new int[12];
 class SystemInfo {
+  
+  SystemInfo() {
+    
 
   
- void Vitality() {
+ 
   vitals[0] = "Fuel";
   vitals[1] = "Chassis";
   vitals[2] = "Engine";
@@ -19,7 +22,10 @@ class SystemInfo {
   vitals[10] = "Shock";
   vitals[11] = "Oxygen";
   
+ }
 
+void displayT()
+{
   for (int i = 0; i < values.length; i++) {
      values[i] = (int)random(1,5);
     float h = map(values[i], 0, 5, 0, 350);
@@ -27,5 +33,5 @@ class SystemInfo {
     text(vitals[i], 20 + i*55, 400); //display the labels of bars
     text(str(values[i]), 20 + i*55, 400-h-20);
   }
- }
+}//end of displayT()
 }
