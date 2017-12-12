@@ -9,7 +9,8 @@ int i =0;
 
 
 Star[] stars = new Star[450];
-system s
+SystemInfo s;
+
 
 void setup() {
   size(1500,900);
@@ -42,6 +43,7 @@ void draw(){
   Speedometer();
   image(img, 0,670,300,300);
   tint(50,50,50);
+  
 
 }
   
@@ -72,6 +74,6 @@ void draw(){
     
     if (key == 'v') //to see systems vitals
     {
-      SystemInfo.displayT();
+      s.displayT();
     }
   }

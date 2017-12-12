@@ -1,8 +1,9 @@
-  // the labels to display under the bars
+
+class SystemInfo {
+    // the labels to display under the bars
 String[] vitals = new String[12];
 // the values for each system entity,going to be random
 int[] values = new int[12];
-class SystemInfo {
   
   SystemInfo() {
     
