@@ -5,7 +5,6 @@ float kph;
 PFont font; 
 PImage img;
 int i =0;
-boolean c;
 
 
 Star[] stars = new Star[450];
