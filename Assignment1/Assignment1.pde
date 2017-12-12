@@ -5,7 +5,7 @@ float kph;
 PFont font; 
 PImage img;
 int i =0;
-
+boolean c;
 
 
 Star[] stars = new Star[450];
@@ -14,6 +14,7 @@ SystemInfo s;
 
 void setup() {
   size(1500,900);
+  s = new SystemInfo();
   for (int i=0; i<stars.length; i++){
     stars[i] = new Star();
   }
@@ -72,7 +73,7 @@ void draw(){
         Speedometer();
     }
     
-    if (key == 'v') //to see systems vitals
+    if (key == 'v' || key == 'V') //to see systems vitals
     {
       s.displayT();
     }
