@@ -4,8 +4,10 @@ int movingSpeed = 0;
 float kph;
 PFont font; 
 PImage img;
+int i =0;
 
 
+System[] vitals = new vital[6]
 Star[] stars = new Star[450];
 
 void setup() {

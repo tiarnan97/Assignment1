@@ -1,8 +1,8 @@
-class System {
-  
-  
-  
-  
-  
-  
+class Vital{
+
 }
+  
+  
+  
+  
+  
