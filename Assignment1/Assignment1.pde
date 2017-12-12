@@ -71,5 +71,6 @@ void draw(){
     
     if (key == 'v') //to see systems vitals
     {
+      SystemInfo.Vitality();
     }
   }
